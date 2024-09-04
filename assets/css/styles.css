@@ -1,6 +1,6 @@
 
 header img {
-    height: 1rem;
+    height: 0.8rem;
 }
 
 nav a img {
@@ -8,19 +8,23 @@ nav a img {
 }
 
 .icon-small {
-    height: 5rem;
+    width: 12%;
 }
 
 .image-medium {
     max-width: 100%;
 }
 
-section {
+#about {
+    margin-top: 5.56rem;
     background: linear-gradient(146deg, #00439c 45%, #00439c00 100%);
 }
 
+#consoles {
+    background-color: #f5f7fa;
+}
+
 section h1 {
-    font-size: 3.2rem;
     color: #fff;
 }
 
@@ -31,4 +35,18 @@ section h5 {
 section .btn {
     --bs-btn-bg: #d63d00;
     --bs-btn-color: #fff
+}
+
+@media screen and (max-width: 1023px ) {
+    .row {
+        flex-direction: column-reverse;
+    }
+
+    .row-cols-2>* {
+        width: 100% !important;
+    }
+
+    .consoles {
+        flex-direction: column;
+    }
 }
