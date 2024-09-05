@@ -56,6 +56,19 @@ section .btn {
     position: absolute;
 }
 
+.playstation-store {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.playstation-store h2 {
+    color: #0072ce;
+}
+
+.playstation-store img {
+    width: 30%;
+}
+
 @media screen and (max-width: 1023px ) {
     .row {
         flex-direction: column-reverse;
@@ -67,5 +80,13 @@ section .btn {
 
     .consoles {
         flex-direction: column;
+    }
+
+    .playstation-store {
+        width: 90%;
+    }
+
+    .playstation-store img {
+        width: 40%;
     }
 }
