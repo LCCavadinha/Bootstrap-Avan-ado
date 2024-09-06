@@ -69,17 +69,36 @@ section .btn {
     width: 30%;
 }
 
+.card-body h5 {
+    height: 2.5rem;
+}
+
+#acessorios img {
+    height: 300px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1200px ) {
+    .row-cols-md-4>* {
+        width: 33% !important;
+    }
+}
+
 @media screen and (max-width: 1023px ) {
-    .row {
+    .about, .library {
         flex-direction: column-reverse;
+    }
+
+    .consoles {
+        flex-direction: column;
     }
 
     .row-cols-2>* {
         width: 100% !important;
     }
 
-    .consoles {
-        flex-direction: column;
+    .row-cols-md-4>* {
+        width: 50% !important;
     }
 
     .playstation-store {
@@ -88,5 +107,11 @@ section .btn {
 
     .playstation-store img {
         width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .row-cols-md-4>* {
+        width: 100% !important;
     }
 }
