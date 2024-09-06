@@ -34,7 +34,32 @@ section h5 {
 
 section .btn {
     --bs-btn-bg: #d63d00;
-    --bs-btn-color: #fff
+    --bs-btn-color: #ebebeb;
+    --bs-btn-hover-border-color: #ea5013;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ea5013;
+    --bs-btn-active-border-color:#d63d00;
+    --bs-btn-active-bg: #d63d00;
+    --bs-btn-active-color: #fff;
+    --bs-border-radius: 1.5rem;
+    --bs-btn-font-weight: 600;
+}
+
+#download, nav .btn {
+    --bs-btn-bg: #0072ce;
+    --bs-btn-color: #ebebeb;
+    --bs-btn-hover-border-color: #00439c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #00439c;
+    --bs-btn-active-border-color: #0072ce;
+    --bs-btn-active-bg: #0072ce;
+    --bs-btn-active-color: #fff;
+    --bs-border-radius: 1.5rem;
+    --bs-btn-font-weight: 600;
+}
+
+nav .btn {
+    --bs-btn-padding-y: 0.075rem;
 }
 
 .carousel-item {
