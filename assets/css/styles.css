@@ -16,7 +16,7 @@ nav a img {
 
 #about {
     margin-top: 5.56rem;
-    background: linear-gradient(146deg, #00439c, #4a688b, #00439c);
+    background: linear-gradient(146deg, #00439c, #031d39, #00439c);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite alternate;
 }
@@ -74,7 +74,6 @@ nav .btn {
     object-position: center;
 }
 
-/* Adcionando um linear gradient para dar um pouco mais de foco ao texto */
 .carousel-item::before {
     content: "";
     width: 100%;
@@ -105,19 +104,22 @@ nav .btn {
     object-fit: contain;
 }
 
-@keyframes gradient {
+footer {
+    background: linear-gradient(146deg, #00439c, #031d39, #00439c);
+    background-size: 400% 400%;
+    animation: footer-gradient 5s ease infinite alternate;
+}
 
-    0% {
-        background-position: 0% 50%;
-    }
+footer h3 {
+    color: #fff;
+}
 
-    50% {
-        background-position: 100% 50%;
-    }
+footer a {
+    color: #ebebeb;
+}
 
-    100% {
-        background-position: 0% 50%;
-    }
+footer a:hover {
+    color: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -133,6 +135,39 @@ nav .btn {
     background: #0072ce;
 }
 
+/* keyframes */
+
+@keyframes footer-gradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* media-queries */
 @media screen and (max-width: 1200px) {
     .row-cols-md-4>* {
         width: 33% !important;
