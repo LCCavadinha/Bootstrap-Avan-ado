@@ -107,7 +107,7 @@ nav .btn {
 footer {
     background: linear-gradient(146deg, #00439c, #031d39, #00439c);
     background-size: 400% 400%;
-    animation: footer-gradient 5s ease infinite alternate;
+    animation: gradient 5s ease infinite alternate;
 }
 
 footer h3 {
@@ -136,21 +136,6 @@ footer a:hover {
 }
 
 /* keyframes */
-
-@keyframes footer-gradient {
-
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
 
 @keyframes gradient {
 
